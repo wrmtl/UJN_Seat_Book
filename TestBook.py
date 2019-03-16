@@ -30,7 +30,7 @@ def book_seat_one(username,password,room,begin_time,end_time,seat_num,date):
 def job1():
     while True:
         try:
-            p = libapi("220161223105", "212711")        #you should put your own usename and password in this line
+            p = libapi("############", "######")        #you should put your own usename and password in this line
             reserve(p.dates()[1])
             break
         except:
