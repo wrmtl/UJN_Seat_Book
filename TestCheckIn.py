@@ -33,7 +33,6 @@ def checkMode(username,password):
 def all_check_time(people):
 	global checkList
 	for person in people:
-		print(person["username"])
 		Mode = checkMode(person["username"],person["password"])
 		if(Mode[0]):
 			print(person,Mode)
