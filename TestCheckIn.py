@@ -50,7 +50,7 @@ def check_can():
 		for user in checkList:
 				user_times = [int(x) for x in user["time"].split(":")]
 				user_time = user_times[0]*60+user_times[1]
-				if user_time <= pan_time:
+				if user_time <= pan_time+43:
 						MycheckIn(user["username"],user["password"])
 						checkList.remove(user)
 
